@@ -1,9 +1,27 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import Value from './components/Value';
+import About from './components/About';
+import Category from './components/Category';
+import Comments from './components/Comments';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Home from './components/Home';
+
 
 
 const App = () => {
-  return <div>react app</div>;
+  return (
+    <div className='max-w[1440px] mx-auto bg-bg' >
+    <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+    <Footer/>
+  </div>
+  ) ;
 };
 
 export default App;
