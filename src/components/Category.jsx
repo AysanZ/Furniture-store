@@ -1,6 +1,7 @@
 import React from "react";
 import { newInStrore } from "../Data";
 import Slider from "./Slider";
+import { motion } from "framer-motion";
 
 const Category = () => {
   const { title, subtitle, link, icon } = newInStrore;
@@ -8,7 +9,12 @@ const Category = () => {
     <section className="section p-14 pb-48 ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0">
+          <motion.div
+            initial={{ x: "-7rem", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="flex md:flex-col items-baseline gap-x-6 mb-6 lg:mb-0"
+          >
             <h2 className="title sm:text-3xl text-2xl font-bold lg:text-2xl mb-3 max-w-[245px] lg:mt-[30px] lg:mb-[50px] ">
               {title}{" "}
             </h2>
@@ -23,7 +29,7 @@ const Category = () => {
               </a>
               <div className="text-3xl">{icon} </div>
             </div>
-          </div>
+          </motion.div>
           <div className="lg:max-w-[800px] xl:max-w-[990px] lg:absolute lg:-right-24 ">
             <Slider />
           </div>

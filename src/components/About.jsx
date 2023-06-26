@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { features } from "../Data";
 
 const About = () => {
@@ -8,10 +8,20 @@ const About = () => {
     <section className="section p-14 ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center gap-20">
-          <div className="flex-1 order-1 lg:-order-1 ">
+          <motion.div
+            initial={{ x: "-7rem", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="flex-1 order-1 lg:-order-1  "
+          >
             <img src={image.type} alt="" style={{ width: "530px" }} />
-          </div>
-          <div className="flex-1 flex flex-col justify-end lg:gap-11 gap-8">
+          </motion.div>
+          <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="flex-1 flex flex-col justify-end lg:gap-11 gap-8"
+          >
             <h2 className="title sm:text-3xl text-2xl font-bold lg:text-2xl mb-3">
               {" "}
               {title}{" "}
@@ -34,7 +44,7 @@ const About = () => {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

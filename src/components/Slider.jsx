@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { newInStrore } from "../Data";
+import { motion } from "framer-motion";
 
 const Slider = () => {
   return (
@@ -22,7 +23,12 @@ const Slider = () => {
       {newInStrore.products.map((product, index) => {
         return (
           <SwiperSlide key={index} className="max-w-[265px] ">
-            <div className="relative">
+            <motion.div
+                   initial={{ x: "7rem", opacity: 0 }}
+                   whileInView={{ x: 0, opacity: 1}}
+                   transition={{ duration: 2 }}
+              className="relative"
+            >
               <img src={product.image.type} alt="" />
               <div
                 className="absolute text-white bottom-[20px] w-full
@@ -30,7 +36,7 @@ const Slider = () => {
               >
                 {product.name}{" "}
               </div>
-            </div>
+            </motion.div>
           </SwiperSlide>
         );
       })}
