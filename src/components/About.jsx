@@ -7,12 +7,12 @@ const About = () => {
   return (
     <section className="section mb-40">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center">
+        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center gap-20">
           <div className="flex-1 order-1 lg:-order-1 ">
             <img src={image.type} alt="" style={{ width: "530px" }} />
           </div>
-          <div className="flex-1 flex flex-col justify-end lg:gap-11">
-            <h2 className="title text-base lg:text-2xl font-semibold mb-3">
+          <div className="flex-1 flex flex-col justify-end lg:gap-11 gap-8">
+            <h2 className="title text-2xl lg:text-2xl font-semibold mb-3">
               {" "}
               {title}{" "}
             </h2>
@@ -24,7 +24,7 @@ const About = () => {
                   <div className="flex mb-6 lg:last:mb-0 ">
                     <div className="text-2xl mr-4 lg:text-3xl "> {icon} </div>
                     <div>
-                      <h4 className=" text-base lg:text-xl font-semibold mb-3 ">
+                      <h4 className=" text-xl lg:text-xl font-semibold mb-3">
                         {" "}
                         {title}{" "}
                       </h4>

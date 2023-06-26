@@ -6,9 +6,9 @@ const About2 = () => {
   return (
     <section className="section mb-44">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center">
-          <div className="flex-1 flex flex-col justify-end lg:gap-11">
-            <h2 className="title text-base lg:text-2xl font-semibold mb-3">
+        <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center gap-20">
+          <div className="flex-1 flex flex-col justify-end lg:gap-11 gap-8">
+            <h2 className="title text-2xl lg:text-2xl font-semibold mb-3">
               {" "}
               {title}{" "}
             </h2>
