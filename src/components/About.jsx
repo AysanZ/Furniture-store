@@ -12,7 +12,7 @@ const About = () => {
             <img src={image.type} alt="" style={{ width: "530px" }} />
           </div>
           <div className="flex-1 flex flex-col justify-end lg:gap-11 gap-8">
-            <h2 className="title text-2xl lg:text-2xl font-semibold mb-3">
+            <h2 className="title sm:text-3xl text-2xl font-bold lg:text-2xl mb-3">
               {" "}
               {title}{" "}
             </h2>

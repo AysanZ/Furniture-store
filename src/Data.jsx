@@ -435,8 +435,8 @@ export const housesData = [
 ]; */
 
 import { RiStarFill } from "react-icons/ri";
-import { FaLock,FaTruck } from "react-icons/fa";
-import { BsBookmarkStarFill,BsPatchCheckFill } from "react-icons/bs";
+import { FaLock, FaTruck } from "react-icons/fa";
+import { BsBookmarkStarFill, BsPatchCheckFill } from "react-icons/bs";
 import {
   IoLogoYoutube,
   IoLogoFacebook,
@@ -445,22 +445,24 @@ import {
   IoMdAddCircle,
   IoIosCheckmarkCircle,
   IoIosArrowRoundForward,
-} from 'react-icons/io';
-import Features1Img from './assets/img/features-1.png';
-import Features2Img from './assets/img/features-2.png';
+} from "react-icons/io";
+import Features1Img from "./assets/img/features-1.png";
+import Features2Img from "./assets/img/features-2.png";
+import ChairImg from './assets/img/chair.png';
+import BedImg from './assets/img/bed.png';
+import CupboardImg from './assets/img/cupboard.png';
+import LightingImg from './assets/img/lighting.png';
 
 export const navigation = [
   {
-    name: 'home',
-    href: 'home',
+    name: "home",
+    href: "home",
   },
   {
-    name: 'products',
-    href: 'products',
+    name: "products",
+    href: "products",
   },
-
 ];
-
 
 export const categories = [
   {
@@ -485,36 +487,60 @@ export const categories = [
   },
   {
     id: 5,
-    icon: <BsPatchCheckFill/>,
-    category: "Money Back Guarantee"
-  }
+    icon: <BsPatchCheckFill />,
+    category: "Money Back Guarantee",
+  },
 ];
-
 
 export const features = {
   image: <Features1Img />,
-  title: 'We Create your home more aesthetic',
+  title: "We Create your home more aesthetic",
   subtitle:
-    'Furniture power is a software as services for multipurpose business management system',
-  buttonText: 'Show Now',
+    "Furniture power is a software as services for multipurpose business management system",
+  buttonText: "Show Now",
   items: [
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Valuation Services',
+      title: "Valuation Services",
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        "Sometimes features require a short description.  This can be detailed description",
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      title: 'Development of Furniture Models',
+      title: "Development of Furniture Models",
       subtitle:
-        'Sometimes features require a short description.  This can be detailed description',
+        "Sometimes features require a short description.  This can be detailed description",
     },
   ],
   feature2: {
     image: <Features2Img />,
-    title: 'The Best Furniture Manufacturer of your choice',
+    title: "The Best Furniture Manufacturer of your choice",
     subtitle:
-      'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
+      "Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.",
   },
+};
+
+export const newInStrore = {
+  title: 'Categories',
+  subtitle: 'Get the latest items immediately with promo prices',
+  link: 'Check all',
+  icon: <IoIosArrowRoundForward />,
+  products: [
+    {
+      name: 'chair',
+      image: <ChairImg />,
+    },
+    {
+      name: 'bed',
+      image: <BedImg />,
+    },
+    {
+      name: 'cupboard',
+      image: <CupboardImg />,
+    },
+    {
+      name: 'lighting',
+      image: <LightingImg />,
+    },
+  ],
 };
