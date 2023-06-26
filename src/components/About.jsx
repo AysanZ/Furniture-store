@@ -5,7 +5,7 @@ import { features } from "../Data";
 const About = () => {
   const { title, subtitle, image, buttonText, items } = features;
   return (
-    <section className="section mb-40">
+    <section className="section p-14 ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center gap-20">
           <div className="flex-1 order-1 lg:-order-1 ">

@@ -20,7 +20,7 @@ const Value = () => {
   };
 
   return (
-    <div className="section mb-44">
+    <div className="section p-14 bg-white">
       <div className="text-center">
         <div className="sm:text-3xl text-2xl font-bold mb-5">
           Why <span className="text-primary">Choose</span> Us

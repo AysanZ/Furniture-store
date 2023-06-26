@@ -4,7 +4,7 @@ import {features} from '../Data'
 const About2 = () => {
     const {title, subtitle, image} = features.feature2;
   return (
-    <section className="section mb-44">
+    <section className="section p-14 bg-white">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-x-[100px] items-center gap-20">
           <div className="flex-1 flex flex-col justify-end lg:gap-11 gap-8">
