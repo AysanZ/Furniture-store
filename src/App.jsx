@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Home from './components/Home';
+import Products from './components/Products';
 
 
 
@@ -18,6 +19,8 @@ const App = () => {
     <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/producs' element={<Products/>} />
+
       </Routes>
     <Footer/>
   </div>

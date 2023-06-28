@@ -25,7 +25,7 @@ const Hero = () => {
           initial={{ x: "7rem", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 2 }}
-          className="hidden flex-1 lg:flex justify-end items-end "
+          className="hidden lg:flex justify-center items-end "
         >
           <img
             src={Image}

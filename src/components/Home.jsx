@@ -4,6 +4,8 @@ import Value from "./Value";
 import About from "./About";
 import About2 from "./About2";
 import Category from "./Category";
+import Comments from "./Comments";
+import Subscribe from "./Subscribe";
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <Value />
       <About />
       <About2 />
-      <Category/>
+      <Category />
+      <Comments />
+      <Subscribe />
     </div>
   );
 };

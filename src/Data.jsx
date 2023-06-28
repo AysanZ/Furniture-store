@@ -448,10 +448,15 @@ import {
 } from "react-icons/io";
 import Features1Img from "./assets/img/features-1.png";
 import Features2Img from "./assets/img/features-2.png";
-import ChairImg from './assets/img/chair.png';
-import BedImg from './assets/img/bed.png';
-import CupboardImg from './assets/img/cupboard.png';
-import LightingImg from './assets/img/lighting.png';
+import ChairImg from "./assets/img/chair.png";
+import BedImg from "./assets/img/bed.png";
+import CupboardImg from "./assets/img/cupboard.png";
+import LightingImg from "./assets/img/lighting.png";
+import TestimonialImg from "./assets/img/testimonial.png";
+import Avatar1Img from "./assets/img/avatar-1.png";
+import Avatar2Img from "./assets/img/avatar-2.png";
+import Avatar3Img from "./assets/img/avatar-3.png";
+import Avatar4Img from "./assets/img/avatar-4.png";
 
 export const navigation = [
   {
@@ -521,26 +526,54 @@ export const features = {
 };
 
 export const newInStrore = {
-  title: 'Categories',
-  subtitle: 'Get the latest items immediately with promo prices',
-  link: 'Check all',
+  title: "Categories",
+  subtitle: "Get the latest items immediately with promo prices",
+  link: "Check all",
   icon: <IoIosArrowRoundForward />,
   products: [
     {
-      name: 'chair',
+      name: "chair",
       image: <ChairImg />,
     },
     {
-      name: 'bed',
+      name: "bed",
       image: <BedImg />,
     },
     {
-      name: 'cupboard',
+      name: "cupboard",
       image: <CupboardImg />,
     },
     {
-      name: 'lighting',
+      name: "lighting",
       image: <LightingImg />,
+    },
+  ],
+};
+
+export const testimonial = {
+  title: "What people are saying about us",
+  image: <TestimonialImg />,
+  persons: [
+    {
+      avatar: <Avatar1Img />,
+      name: "Josh Smith",
+      occupation: "Manager of The New York Times",
+      message:
+        "“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”",
+    },
+    {
+      avatar: <Avatar2Img />,
+      name: "Brandi Johns",
+      occupation: "Manager of The New York Times",
+      message:
+        "“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”",
+    },
+    {
+      avatar: <Avatar3Img />,
+      name: "Paula Pfeffer",
+      occupation: "Manager of The New York Times",
+      message:
+        "“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”",
     },
   ],
 };

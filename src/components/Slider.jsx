@@ -23,10 +23,8 @@ const Slider = () => {
       {newInStrore.products.map((product, index) => {
         return (
           <SwiperSlide key={index} className="max-w-[265px] ">
-            <motion.div
-                   initial={{ x: "7rem", opacity: 0 }}
-                   whileInView={{ x: 0, opacity: 1}}
-                   transition={{ duration: 2 }}
+            <div
+
               className="relative"
             >
               <img src={product.image.type} alt="" />
@@ -36,7 +34,7 @@ const Slider = () => {
               >
                 {product.name}{" "}
               </div>
-            </motion.div>
+            </div>
           </SwiperSlide>
         );
       })}
