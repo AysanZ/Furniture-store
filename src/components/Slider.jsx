@@ -23,10 +23,7 @@ const Slider = () => {
       {newInStrore.products.map((product, index) => {
         return (
           <SwiperSlide key={index} className="max-w-[265px] ">
-            <div
-
-              className="relative"
-            >
+            <div className="relative">
               <img src={product.image.type} alt="" />
               <div
                 className="absolute text-white bottom-[20px] w-full

@@ -42,6 +42,7 @@ const Navbar = () => {
               return (
                 <li key={index}>
                   <Link
+                  to={item.link}
                     className="capitalize text-primary hover:border-b transition-all"
                   >
                     {item.name}

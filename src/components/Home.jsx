@@ -15,6 +15,7 @@ const Home = () => {
       <About />
       <About2 />
       <Category />
+
       <Comments />
       <Subscribe />
     </div>
